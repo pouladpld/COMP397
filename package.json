@@ -1,0 +1,25 @@
+{
+  "name": "comp397",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd \"docs/assets/scripts\" && node \"../../../node_modules/typescript/bin/tsc\" --watch",
+    "serve": "node server.js",
+    "start": "npm run build & npm run serve",
+    "start-win": "start npm run build && start npm run serve"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pouladpld/COMP397.git"
+  },
+  "author": "Poulad",
+  "bugs": {
+    "url": "https://github.com/pouladpld/COMP397/issues"
+  },
+  "homepage": "http://pouladpld.github.io/COMP397/index.html",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.1"
+  }
+}
