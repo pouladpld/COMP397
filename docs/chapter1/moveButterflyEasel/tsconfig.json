@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "watch": true,
+    "sourceMap": true
+  },
+  "include": [
+    "../../../typings/index.d.ts",
+    "./**.ts"
+  ]
+}

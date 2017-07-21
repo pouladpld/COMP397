@@ -2,10 +2,9 @@
   "name": "comp397",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd \"docs/assets/scripts\" && node \"../../../node_modules/typescript/bin/tsc\" --watch",
-    "serve": "node server.js",
-    "start": "npm run build & npm run serve",
-    "start-win": "start npm run build && start npm run serve"
+    "install": "./node_modules/.bin/typings install",
+    "postinstall": "./node_modules/.bin/tsc --project docs/",
+    "start": "node server.js"
   },
   "private": true,
   "repository": {
@@ -18,8 +17,9 @@
   },
   "homepage": "http://pouladpld.github.io/COMP397/index.html",
   "devDependencies": {
-    "express": "^4.15.2",
-    "typescript": "^2.2.2",
+    "express": "^4.15.3",
+    "serve-index": "^1.9.0",
+    "typescript": "^2.4.1",
     "typings": "^2.1.1"
   }
 }

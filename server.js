@@ -1,9 +1,14 @@
 var express = require('express');
+var serveIndex = require('serve-index');
+
 var app = express();
 
-var portNumber = 8080;
+var portNumber = 5000;
 
-app.use('', express.static(__dirname + '/docs'));
+var directoryName = __dirname + '/docs';
+
+app.use('', express.static(directoryName));
+app.use('', serveIndex(directoryName));
 
 app.listen(portNumber);
 
